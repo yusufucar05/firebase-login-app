@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "450681217826",
+    "project_id": "loginappfire-8e04a",
+    "storage_bucket": "loginappfire-8e04a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:450681217826:android:fced553e1754344c82bb7b",
+        "android_client_info": {
+          "package_name": "com.example.loginappfire"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyVEdgRzQD7BbTPx7BQuBca14_B0TM3a4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
