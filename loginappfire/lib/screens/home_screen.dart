@@ -57,7 +57,7 @@ class DialogExample extends StatelessWidget {
           title: const Text('AlertDialog Title'),
           content: Column(
             children: [
-              LogoWidget('assets/images/logo.png'),
+              LogoWidget('assets/images/ardabuild.png'),
               SizedBox(height: 50),
               const Text('hop Kardeşim o Hareketi yanlış yapıyorsun'),
             ],
