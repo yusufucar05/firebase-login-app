@@ -13,6 +13,14 @@ Image LogoWidget(String imageName) {
   );
 }
 
+Image ContentImageWidget(String imageName) {
+  return Image.asset(imageName, fit: BoxFit.fitWidth, width: 400, height: 400);
+}
+
+Container ContentWidget(String contentText) {
+  return Container();
+}
+
 TextField reusTextField(
   String text,
   IconData icon,
