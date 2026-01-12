@@ -2,7 +2,7 @@
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-//import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:loginappfire/reusable_widgets/resuble_widgets.dart';
 import 'package:loginappfire/screens/home_screen.dart';
 import 'package:loginappfire/screens/signup_screen.dart';
@@ -20,17 +20,11 @@ class _SigninScreenState extends State<SigninScreen> {
   TextEditingController t2 = TextEditingController();
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
+    return Material(
+      child: Container(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: [Colors.blue, Colors.purple, Colors.amberAccent],
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-          ),
-        ),
+        decoration: CostomBoxDecoration(),
         child: SingleChildScrollView(
           child: Padding(
             padding: EdgeInsets.fromLTRB(

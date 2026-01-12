@@ -38,6 +38,10 @@ class _HomePageState extends State<HomePage> {
             ),
             SizedBox(height: 30),
             DialogExample(),
+            ContentWidget(
+              "Bu Yazıyı Görüyorsan ciddi sorunların var",
+              'assets/images/ardabuild.png',
+            ),
           ],
         ),
       ),

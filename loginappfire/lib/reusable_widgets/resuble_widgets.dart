@@ -17,8 +17,17 @@ Image ContentImageWidget(String imageName) {
   return Image.asset(imageName, fit: BoxFit.fitWidth, width: 400, height: 400);
 }
 
-Container ContentWidget(String contentText) {
-  return Container();
+Container ContentWidget(String contentText, imageName) {
+  return Container(
+    width: 200,
+    height: 440,
+    color: Colors.amberAccent,
+    child: SafeArea(
+      child: Column(
+        children: [ContentImageWidget(imageName), Text(contentText)],
+      ),
+    ),
+  );
 }
 
 TextField reusTextField(
@@ -88,6 +97,16 @@ Container SignInSignUpButton(
           fontWeight: FontWeight.bold,
         ),
       ),
+    ),
+  );
+}
+
+BoxDecoration CostomBoxDecoration() {
+  return BoxDecoration(
+    gradient: LinearGradient(
+      colors: [Colors.blue, Colors.purple, Colors.amberAccent],
+      begin: Alignment.topCenter,
+      end: Alignment.bottomCenter,
     ),
   );
 }
